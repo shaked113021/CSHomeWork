@@ -78,6 +78,7 @@ public class Question4 {
 
     while(currNum != null) {
       if(!isExist(currNum.getValue(), stk)) return false;
+      currNum = currNum.getNext();
     }
 
     return true;
