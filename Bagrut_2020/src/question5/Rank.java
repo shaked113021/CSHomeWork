@@ -27,6 +27,7 @@ public class Rank {
         currNode.setNext(new Node<Competitor>(x, currNode.getNext()));
         return;
       }
+      currNode = currNode.getNext();
     }
 
     currNode.setNext(new Node<Competitor>(x));
